@@ -9,7 +9,7 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.left}>
       <img
-          src="/majayoga.jpg"
+          src="/majafranklinyogahero.jpg"
           alt="Maja Franklin by the water"
           width={1571}
           height={2158}
