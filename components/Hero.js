@@ -4,18 +4,18 @@ import Link from 'next/link'
 import { FaYoutube, FaInstagram } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 
+
 export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.left}>
-      <img
-          src="/majafranklinyogahero.jpg"
-          alt="Maja Franklin by the water"
-          width={1571}
-          height={2158}
-          layout="responsive"
-          className={styles.heroImage}
-        />
+      <Image
+        src="/majafranklinyogahero.jpg"
+        alt="Maja Franklin by the water"
+        width={1571}
+        height={2158}
+        className={styles.heroImage}
+      />
 
         <div className={styles.logo}>
             <img
