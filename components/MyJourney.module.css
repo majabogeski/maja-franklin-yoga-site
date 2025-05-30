@@ -1,0 +1,83 @@
+.myJourney {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  color:#735240;
+  box-sizing: border-box;
+  gap: 3rem;
+  max-width: 1200px;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 0.2rem 2rem;
+}
+.sectionLightBrown{
+   background-color: #fff;
+}
+
+.textContent {
+  flex: 1;
+}
+
+.title {
+  font-size: 2.8rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+  color: #b58676;
+}
+
+.textContent p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  color: #735240;
+}
+
+.imageWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myJourneyImage {
+  width: 100%;
+  max-width: 500px; /* adjust as needed */
+  height: auto;
+  border-radius: 8px; /* optional for aesthetics */
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .myJourney {
+    flex-direction: column;
+    text-align: left;
+    padding: 0.2rem 2rem;
+    gap: 0rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+
+  .textContent p {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 768px) {
+    .imageWrapper {
+      justify-content: center;
+      margin-top: 1rem;
+    }
+  
+    .myJourneyImage {
+      max-width: 350px; /* Make the image smaller on mobile */
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+}

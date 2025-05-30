@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+.sectionDivBrown{
+  background-color: #fff2dc !important;
+}
+
+/* .wrapperWidth{
+  max-width: 1000px !important;
+} */
+.interMedium {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #b58676;
+  text-align: center;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .momWellnessIntro {
+    padding: 1rem 12%;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .bullets {
+    font-size: 1rem;
+  }
+  .smallCopy {
+    font-size: 1rem;
+  }
+  .cornerImage {
+    width: 150px;
+    height: 150px;
+  }
+}

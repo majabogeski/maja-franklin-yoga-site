@@ -1,0 +1,64 @@
+.forYouIf {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #735240;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+  }
+  
+  .image {
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    margin-right: 3rem;
+    object-position: center 10%;
+
+  }
+  
+  .content {
+    flex: 1;
+  }
+
+  /* .button{
+    display: block; 
+    margin: 1rem auto 1rem auto; 
+    width: fit-content; 
+    padding: 1rem 2rem;
+    background-color: #b58676;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color: #9b5c28;
+  }
+   */
+ 
+  /* Responsive for smaller screens */
+  
+  @media (max-width: 768px) {
+    .forYouIf {
+      flex-direction: column;
+      text-align: left;
+    }
+    .image {
+      width: 200px;
+      height: 200px;
+      margin: 2rem 0 auto 0;
+    }
+  
+   
+  
+   
+  }
+  

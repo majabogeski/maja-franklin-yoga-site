@@ -1,0 +1,26 @@
+/* Custom layout for MomMessage on desktop */
+@media (min-width: 768px) {
+    .momMessageWrapper {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center; /* Vertically center image with text */
+      gap: 2rem;
+     
+    }
+  
+    .momMessageImage {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 80%;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+  }
+  
+
+
+
+
+

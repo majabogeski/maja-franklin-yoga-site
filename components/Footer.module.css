@@ -1,0 +1,184 @@
+.footer {
+  background-color: #b58676;
+  color: white;
+  padding: 1.5rem 1rem 1rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* 🆕 Top section of the footer (logo, signup, social) */
+.footerTop {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Logos container */
+.footerLogos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.footerLogos img {
+  height: 320px;
+  max-width: 400px;
+  object-fit: contain;
+  margin: -6rem 0 -6rem;
+}
+
+/* Social icons */
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  font-size: 28px;
+  border-radius: 50%;
+  color: #735240;
+  background-color: #fff4e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.socialIcon:hover {
+  background-color: #735240;
+  color: white;
+}
+
+/* Signup form */
+.signupForm {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.signupInput {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  min-width: 220px;
+  max-width: 300px;
+  flex-grow: 1;
+  font-family: inherit;
+}
+
+.signupInput:focus {
+  outline: 2px solid #fff2dc;
+  outline-offset: 2px;
+}
+
+.signupButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #fff2dc;
+  border: none;
+  border-radius: 4px;
+  color: #b58676;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: inherit;
+  transition: background-color 0.3s ease;
+}
+
+.signupButton:hover {
+  background-color: #d9c3a2;
+  color: #7a533a;
+}
+
+/* Legal text */
+.legalText {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #fceee6;
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .footerTop {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footerLogos {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footerLogos img {
+    height: 250px;
+    max-width: 400px;
+    object-fit: contain;
+    display: block;
+    padding: 0;
+    margin: -4rem 0 -6rem;
+  }
+
+  .signupInput {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .signupButton {
+    width: 100%;
+  }
+
+  .socialLinks {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 481px) {
+  .footerTop {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* ✅ limits width on desktop */
+    margin: 0 auto;     /* ✅ centers the footerTop */
+    padding: 0 2rem;
+    gap: 1rem;
+  }
+
+  .footerLogos,
+  .signupForm,
+  .socialLinks {
+    flex: 1;
+  }
+
+  .footerLogos {
+    justify-content: flex-start;
+  }
+
+  .signupForm {
+    justify-content: center;
+  }
+
+  .socialLinks {
+    justify-content: flex-end;
+    margin-bottom: 0;
+  }
+
+  .legalText {
+    margin-top: 1rem;
+  }
+}

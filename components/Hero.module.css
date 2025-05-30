@@ -1,0 +1,234 @@
+
+/* Mobile First – Base Styles */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  overflow: hidden;
+  min-height: 60vh;
+}
+.logo {
+  position: absolute;
+  top: -45px;
+  left: -4px;
+  z-index: 3;
+ /* max-width: 300px; */
+  height: auto;
+  pointer-events: none;
+
+}
+.logoImage {
+  width: 60vw;
+  max-width: 450px;
+  height: auto; /* Keep aspect ratio */
+  display: block; /* Optional but helps prevent inline spacing issues */
+}
+
+
+.left,
+.right {
+  flex: 1 1 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 60vh;
+}
+.right {
+  flex: 1;
+  background-color: #b58676;
+  color: #fff4e9;
+  padding: 0.2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+}
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+
+
+
+
+.title {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: white;
+}
+
+.cream {
+  color: #fff2dc;
+}
+
+.white {
+  color: white;
+}
+
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  max-width: 600px;
+  margin: 0;
+  color: white;
+}
+
+
+.socialLinks {
+  display: none;
+}
+.buttonHero{
+  background-color: white;
+  color: #b58676;
+}
+/* Tablet & Desktop Overrides */
+@media (min-width: 768px) {
+  .logo {
+    top: -20px;
+    left: 0px;
+    width: 20vw;
+    max-width: 250px;
+  }
+  .logoImage {
+    width: 25vw;
+    max-width: 350px;
+    height: auto; /* Keep aspect ratio */
+    display: block; /* Optional but helps prevent inline spacing issues */
+  }
+  .hero {
+    flex-direction: row;
+    min-height: 65vh;            /* Let height be determined by image */
+  }
+
+  .left,
+  .right {
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+   .left{
+    flex: 1 1 50%;
+    width: 50%;
+  
+   }
+  
+    .right {
+      flex: 1 1 50%;
+      text-align: left;
+      width: 50%;
+      align-items: flex-start;
+      padding: 2rem;
+    }
+
+.heroImage {
+    height: 65vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+  } 
+
+
+
+
+  .title {
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    padding: 0;
+  }
+
+  .socialLinks {
+    display: flex;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    gap: 15px;
+    z-index: 10;
+  }
+
+  .socialIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    border-radius: 50%;
+    color: #735240;
+    background-color: #fff4e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .socialIcon:hover {
+    background-color: #735240;
+    color: white;
+  }
+}
+@media (min-width: 1024px) {
+  .logo {
+    top: -57px;
+    left: -14px;
+    width: 20vw;
+    max-width: 250px;
+  }
+  .logoImage {
+    width: 25vw;
+    max-width: 350px;
+    height: auto; /* Keep aspect ratio */
+    display: block; /* Optional but helps prevent inline spacing issues */
+  }
+  .hero {
+    flex-direction: row;
+    min-height: 90vh;            /* Let height be determined by image */
+  }
+  .title {
+    font-size: 2.6rem;
+   
+  }
+  .subtitle {
+
+    font-size: 1.4rem;
+   
+   
+  }
+  .left,
+  .right {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .heroImage {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+  } 
+    
+}
+
+
+
+
+
+
