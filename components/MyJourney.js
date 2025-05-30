@@ -13,9 +13,7 @@ const MyJourney = () => {
           becoming a yoga teacher and holistic coach.
         </p>
         <p>
-          Through yoga teacher training and deep reflection, I followed a calling to support women—especially moms—through
-          the healing power of yoga and holistic coaching. Coaching has become my path to peace and purpose and my way
-          of helping others find calm and balance in the midst of everyday life.
+        Through yoga teacher training and deep inner work, I followed a calling to support women—especially moms—through the healing power of yoga and coaching. This work has become my path to peace and purpose, and the way I help others find calm, clarity, and joy in everyday life.
         </p>
       </div>
 

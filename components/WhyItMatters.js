@@ -16,8 +16,7 @@ const WhyItMatters = () => {
       <div className={styles.right}>
         <h2 className={styles.title}>It’s More Than Just Stress Relief</h2>
         <p className={styles.subtitle}>
-          Through a unique blend of yoga and holistic coaching, I support you in restoring balance, 
-          finding calm and joy—physically, emotionally, and spiritually.
+        Blending ancient yoga wisdom with coaching that nurtures mind, body, and spirit, I help you discover balance and cultivate calm and joy—physically, emotionally, and spiritually.
         </p>
         
         <Link href="https://innermovementcoaching.com/contact" passHref target="_blank" rel="noopener noreferrer">

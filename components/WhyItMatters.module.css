@@ -92,6 +92,9 @@
     color: white;
     
   }
+  .subtitle{
+    font-size: 1.2rem;
+  }
 
   .left {
     min-height: auto; /* remove the forced height on image container */
