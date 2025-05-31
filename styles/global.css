@@ -193,5 +193,6 @@ html, body {
   box-sizing: border-box; /* include padding in width */
   margin: 40px auto 40px; /* centered with auto horizontal margin */
   font-size: 1.1rem;
+  padding: 1rem 2rem;
   }
 }
