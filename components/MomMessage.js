@@ -21,8 +21,7 @@ const MomMessage = () => {
           </ul>
           <p>You're not alone.</p>
           <p>
-            As a mom myself, I understand the overwhelm of juggling deadlines, family responsibilities,
-            and school runs and still striving to be fully present for your child.
+          As a mom, I know how overwhelming it can get—juggling deadlines, family responsibilities, school runs, and still trying to be fully present for your child.
           </p>
           <p>
             I’ve been there—running on empty, holding it all together, and just craving a moment to breathe.
