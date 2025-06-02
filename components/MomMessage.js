@@ -28,9 +28,6 @@ const MomMessage = () => {
           </p>
         </div>
       </div>
-      {/* <Link href="#contact" passHref>
-        <button className="ctaColor">Free Intro Session</button>
-      </Link> */}
     </section>
   );
 };

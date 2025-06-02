@@ -4,9 +4,7 @@
   background-color: #fff2dc !important;
 }
 
-/* .wrapperWidth{
-  max-width: 1000px !important;
-} */
+
 .interMedium {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
@@ -17,21 +15,4 @@
 
 
 
-@media (max-width: 768px) {
-  .momWellnessIntro {
-    padding: 1rem 12%;
-  }
-  .title {
-    font-size: 2rem;
-  }
-  .bullets {
-    font-size: 1rem;
-  }
-  .smallCopy {
-    font-size: 1rem;
-  }
-  .cornerImage {
-    width: 150px;
-    height: 150px;
-  }
-}
+
