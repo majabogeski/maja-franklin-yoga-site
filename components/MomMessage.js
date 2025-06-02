@@ -1,17 +1,21 @@
 // components/MomMessage.js
 import React from 'react';
 import styles from './MomMessage.module.css';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const MomMessage = () => {
   return (
     <section className="sectionDiv">
       <div className={`${styles.momMessageWrapper} contentWrapper`}>
-        <img
-          src="/WorriedMom.jpg"
-          alt="Mom with child"
-          className={`${styles.momMessageImage} cornerImage`}
-        />
+        <Image
+        src="/WorriedMom.jpg"
+        alt="Mom with child"
+        className={`${styles.momMessageImage} cornerImage`}
+        width={600}
+        height={400}
+        priority={false}
+      />
         <div className="copyDiv">
           <h2 className="title">Feeling Stretched Too Thin?</h2>
           <ul className="bullets">

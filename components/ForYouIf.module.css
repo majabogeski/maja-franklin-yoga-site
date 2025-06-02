@@ -25,26 +25,7 @@
     flex: 1;
   }
 
-  /* .button{
-    display: block; 
-    margin: 1rem auto 1rem auto; 
-    width: fit-content; 
-    padding: 1rem 2rem;
-    background-color: #b58676;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-    text-align: center;
-  }
-  
-  .button:hover {
-    background-color: #9b5c28;
-  }
-   */
- 
-  /* Responsive for smaller screens */
+
   
   @media (max-width: 768px) {
     .forYouIf {

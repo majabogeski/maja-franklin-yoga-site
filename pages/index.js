@@ -3,6 +3,8 @@ import Hero from '../components/Hero'
 import MomMessage from '../components/MomMessage'
 import MomWellnessIntro from '../components/MomWellnessIntro'
 import ForYouIf from '../components/ForYouIf'
+import Choices from '../components/Choices'
+import Testimonials from '../components/Testimonials'
 import WhyItMatters from '../components/WhyItMatters'
 import WhatIOffer from '../components/WhatIOffer'
 import MyJourney from '../components/MyJourney'
@@ -13,6 +15,11 @@ export default function Home() {
   return (
     <>
       <Head>
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
         <title>Maja Franklin | Yoga & Holistic Coaching for Moms</title>
         <meta
           name="description"
@@ -49,6 +56,8 @@ export default function Home() {
         <MomMessage />
         <MomWellnessIntro />
         <ForYouIf />
+        <Choices />
+        <Testimonials/>
         <WhatIOffer />
         <MyJourney />
         <WhyItMatters />

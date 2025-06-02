@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const WhatIOffer = () => {
   return (
-    <section className={`sectionDiv ${styles.sectionDivLightBrown}`}>
+    <section className="sectionDiv">
      <div className="contentWrapper">
       <div className="copyDiv">
             <h2 className="title">What I Offer</h2>
