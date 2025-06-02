@@ -4,22 +4,23 @@ import Link from 'next/link'
 
 const WhatIOffer = () => {
   return (
-    <section className="sectionDiv">
+    <section className={`sectionDiv ${styles.sectionLightBrown}`}> 
      <div className="contentWrapper">
       <div className="copyDiv">
-            <h2 className="title">What I Offer</h2>
+            <h2 className="title">How I Help</h2>
             
           <p>
-            I guide busy, big-hearted mothers through gentle yet powerful practices that help you:
+          I guide high-achieving, caring moms who do it all to thrive from the inside out — so you can finally let go of the overwhelm and fully step into support, presence, and ease
           </p>
           <ul className="bullets">
-            <li>Exhale the pressure of doing it all and feel truly supported</li>
-            <li>Rediscover the power of being, not doing, in your everyday life</li>
-            <li>Feel at home in your body again — without needing to push, fix, or prove anything</li>
-            <li>Use simple breath and movement to stay grounded and calm, even when life feels chaotic</li>
-            <li>Soothe your nervous system so you can show up calm and present — for yourself and your family</li>
-            <li>Reconnect to what matters most — not society’s version of balance, but yours</li>
-            <li>Carve out space to rest, reflect, and reset — without guilt</li>
+          <li><strong>Exhale the pressure</strong> of doing it all and feel <strong>truly supported</strong></li>
+          <li>Rediscover the power of <strong>being, not doing</strong>, in your everyday life</li>
+          <li>Feel <strong>at home in your body</strong> again — without needing to push, fix, or prove anything</li>
+          <li>Use <strong>simple breath and movement</strong> to stay <strong>grounded and calm</strong>, even when life feels chaotic</li>
+          <li><strong>Soothe your nervous system</strong> so you can show up <strong>calm and present</strong> — for yourself and your family</li>
+          <li>Reconnect to <strong>what matters most</strong> — not society’s version of balance, but <strong>yours</strong></li>
+          <li>Carve out space to <strong>rest, reflect, and reset</strong> — without guilt</li>
+
           </ul>
           <Link href="https://innermovementcoaching.com/contact" className="button"target="_blank" rel="noopener noreferrer">
             Book Free Session
