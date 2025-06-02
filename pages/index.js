@@ -15,11 +15,15 @@ export default function Home() {
   return (
     <>
       <Head>
+        {/* Favicons */}
         <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="maja yoga" />
         <link rel="manifest" href="/site.webmanifest" />
+
+        {/* Page Metadata */}
         <title>Maja Franklin | Yoga & Holistic Coaching for Moms</title>
         <meta
           name="description"
@@ -31,7 +35,7 @@ export default function Home() {
         />
         <meta name="author" content="Maja Franklin" />
 
-        {/* Open Graph (Facebook, LinkedIn, etc.) */}
+        {/* Open Graph */}
         <meta property="og:title" content="Maja Franklin | Yoga & Holistic Coaching for Moms" />
         <meta
           property="og:description"
@@ -57,7 +61,7 @@ export default function Home() {
         <MomWellnessIntro />
         <ForYouIf />
         <Choices />
-        <Testimonials/>
+        <Testimonials />
         <WhatIOffer />
         <MyJourney />
         <WhyItMatters />
