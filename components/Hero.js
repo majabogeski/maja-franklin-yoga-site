@@ -40,7 +40,7 @@ export default function Hero() {
         <p className={styles.subtitle}>
           Using simple tools to reduce stress, restore your well-being, and enjoy motherhood—without burning out.
         </p>
-        <Link href="https://innermovementcoaching.com/contact" legacyBehavior passHref>
+        <Link href="/book-free-session" legacyBehavior passHref>
           <a target="_blank" rel="noopener noreferrer">
             <button className="cta">Book Free Session</button>
           </a>
