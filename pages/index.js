@@ -29,6 +29,9 @@ const WhyItMatters = dynamic(() => import('../components/WhyItMatters'), {
 const WhyItWorks = dynamic(() => import('../components/WhyItWorks'), {
   loading: () => <p>Loading...</p>,
 })
+const StickyButton = dynamic(() => import('../components/StickyButton'), {
+  loading: () => <p>Loading...</p>,
+})
 const Footer = dynamic(() => import('../components/Footer'), {
   loading: () => <p>Loading...</p>,
 })
@@ -113,6 +116,7 @@ export default function Home() {
         <WhyItMatters />
         <WhyItWorks />
         <Footer />
+        <StickyButton/>
       </main>
     </>
   )

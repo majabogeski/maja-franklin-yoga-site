@@ -9,7 +9,7 @@ const MomWellnessIntro = () => {
       <div className="contentWrapper">
       <div className="copyDiv">
       <h2 className="title">
-        For Moms Who Never Stop Giving, It’s Time to Take Care of You, Too.
+        For Moms Who Never Stop Giving, It’s Time to Take Care of You, Too
       </h2>
 
       <p className={styles.paragraph}>
