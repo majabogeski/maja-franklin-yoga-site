@@ -42,6 +42,12 @@ const Footer = () => {
         </div>
 
         <form className={styles.signupForm} onSubmit={handleSubmit}>
+         <p
+          className={styles.signupMessage}
+          style={{ textAlign: "center", fontWeight: 500 }}
+        >
+          Sign up for calm and balance — simple tools for busy moms.
+        </p>
           <input
             className={styles.signupInput}
             type="email"
