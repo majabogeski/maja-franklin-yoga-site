@@ -29,10 +29,10 @@ const testimonials = [
   //   name: "Natalie S.",
   //   text: "Before working with Maja, I was overwhelmed trying to juggle a full-time job, my business, and parenting as a single mom. I felt constantly stressed and struggled to prioritize what really mattered. Maja guided me with meditation, breathwork, and gentle movement to help me reconnect with myself and truly focus on what’s important—letting go of things that aren’t and not obsessing over them. Her thoughtful questions helped me uncover my own answers instead of just giving advice. With her support, I learned how to make wiser choices and make my own decisions that feel right to me with confidence, manage my stress better, and focus on what truly counts in my life. Thanks to Maja, I feel more balanced, calm, and confident in handling everything on my plate. So thankful!",
   // },
-  // {
-  //   name: "Laxmi G.",
-  //   text: "The experience was absolutely amazing—exactly what I was looking for! The class was both refreshing and rejuvenating, leaving me feeling more balanced and energized. I truly appreciate the guidance and atmosphere, and I will definitely continue attending.",
-  // },
+  {
+    name: "Laxmi G.",
+    text: "The experience was absolutely amazing—exactly what I was looking for! The class was both refreshing and rejuvenating, leaving me feeling more balanced and energized. I truly appreciate the guidance and atmosphere, and I will definitely continue attending.",
+  },
   {
     name: "Nancy G.",
     text: "Working with Maja has been a transformative experience. Her support helped me stay focused, break through mental blocks, and believe in my potential—even in tough moments. I now feel more capable, clear, and confident.",
@@ -52,7 +52,7 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
-  const [visibleCount, setVisibleCount] = useState(3);
+  const [visibleCount, setVisibleCount] = useState(5);
 
   const handleShowMore = () => {
     setVisibleCount(testimonials.length);

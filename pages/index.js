@@ -51,7 +51,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* Page Metadata */}
-        <title>Maja Franklin | Yoga & Holistic Coaching for Moms</title>
+        <title>Maja Franklin | Yoga & Holistic Coaching for Moms in Bay Area</title>
         <meta
           name="description"
           content="Helping busy moms find calm, balance, and joy through breathwork, yoga, and mindful routines."
