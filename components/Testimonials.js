@@ -52,13 +52,31 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
-  const [visibleCount, setVisibleCount] = useState(5);
+  const [showAll, setShowAll] = useState(false);
+  const [initialCount, setInitialCount] = useState(5); // default for desktop
 
-  const handleShowMore = () => {
-    setVisibleCount(testimonials.length);
+  useEffect(() => {
+    const updateCount = () => {
+      if (window.innerWidth < 768) {
+        setInitialCount(3); // mobile
+      } else {
+        setInitialCount(5); // desktop
+      }
+    };
+
+    updateCount(); // run once on mount
+    window.addEventListener("resize", updateCount);
+
+    return () => window.removeEventListener("resize", updateCount);
+  }, []);
+
+  const toggleTestimonials = () => {
+    setShowAll(!showAll);
   };
 
-  const visibleTestimonials = testimonials.slice(0, visibleCount);
+  const visibleTestimonials = showAll
+    ? testimonials
+    : testimonials.slice(0, initialCount);
 
   return (
     <section
@@ -66,6 +84,7 @@ const Testimonials = () => {
       aria-label="Client testimonials about yoga and life coaching with Maja"
     >
       <h2 className="title">From My Clients</h2>
+
       <div className={styles.grid}>
         {visibleTestimonials.map((t, index) => (
           <div key={index} className={styles.card}>
@@ -75,9 +94,9 @@ const Testimonials = () => {
         ))}
       </div>
 
-      {visibleCount < testimonials.length && (
-        <button className={styles.showMoreBtn} onClick={handleShowMore}>
-          Show More
+      {testimonials.length > initialCount && (
+        <button className={styles.showMoreBtn} onClick={toggleTestimonials}>
+          {showAll ? "Show Less" : "Show More"}
         </button>
       )}
 
@@ -98,16 +117,16 @@ const Testimonials = () => {
               "Holistic Coaching",
               "Motherhood Support",
               "Wellness",
-              "Meditation",
+              "Meditation"
             ],
             review: testimonials.map((t) => ({
               "@type": "Review",
               reviewBody: t.text,
               author: {
                 "@type": "Person",
-                name: t.name,
-              },
-            })),
+                name: t.name
+              }
+            }))
           }),
         }}
       />
