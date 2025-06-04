@@ -29,7 +29,7 @@ const MomWellnessIntro = () => {
       Find calm in the chaos — start with one breath.
       </p>
  
-        <Link href="https://innermovementcoaching.com/contact" className="button"target="_blank" rel="noopener noreferrer">
+        <Link href="/book-free-session" className="button"target="_blank" rel="noopener noreferrer">
           Book Free Session
         </Link>
   

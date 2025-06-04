@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./Testimonials.module.css";
+import Link from "next/link";
 
 const testimonials = [
   {
@@ -73,7 +74,19 @@ const Testimonials = () => {
       {isMobile && visibleCount < testimonials.length && (
         <button className={styles.showMoreBtn} onClick={handleShowMore}>
           Show More
-        </button>
+        </button>        
+      )}
+    {!isMobile && (
+        <div className={styles.ctaWrapper}>
+          <Link
+            href="/book-free-session"
+            className="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Book Free Session
+          </Link>
+        </div>
       )}
 
       {/* JSON-LD for SEO */}

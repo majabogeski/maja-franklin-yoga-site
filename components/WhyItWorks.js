@@ -36,7 +36,7 @@ export default function WhyItWorks() {
           </p>
         </div>
       </div>
-      <Link href="https://innermovementcoaching.com/contact" className="button" passHref target="_blank" rel="noopener noreferrer">
+      <Link href="/book-free-session" className="button" passHref target="_blank" rel="noopener noreferrer">
              Book Free Session
           </Link>
     </section>

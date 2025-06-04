@@ -1,33 +1,216 @@
-.main {
+.videoBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.75) saturate(1.1); /* brighter, more vivid */
+  }
+  
+  .videoOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(230, 220, 255, 0.15); /* slightly deeper warm peach */
+    z-index: 0;
+  }
+  
+  
+  .main {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 4rem 1rem;
-    background-color: #fff;
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    z-index: 1;
   }
   
   .heading {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #333;
-    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+    font-weight: 800;
+    color: white;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    letter-spacing: 0.03em;
+  }
+  
+  .highlight {
+    white-space: nowrap;
+    color: white;
+    padding: 0.4em 1em;
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    box-shadow: none;
+    backdrop-filter: blur(6px);
   }
   
   .text {
-    font-size: 1.125rem;
+    white-space: nowrap;
+    font-size: 1.6rem;
     margin-bottom: 2rem;
-    color: #555;
+    color: white;
+    line-height: 1.6;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
   }
   
   .calendlyWidget {
     width: 100%;
-    max-width: 800px;
-    height: 850px; /* more vertical space */
-    min-height: 630px;
-    border: none;
+    max-width: 700px;
+    height: 850px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   }
   
+  .urgencyPrompt {
+    margin-top: 1.5rem;
+    font-size: 1.6rem; /* bigger size */
+    color: #ffffff;
+    font-weight: 600;
+    font-style: italic;
+    animation: fadeSlideUp 1s ease-out forwards;
+    animation-delay: 3s;
+    opacity: 0;
+  }
+  .urgencyPrompt {
+    margin-top: 1.5rem;
+    font-size: 1.6rem; /* bigger size */
+    color: #ffffff;
+    font-weight: 600;
+    font-style: italic;
+    animation: fadeSlideUp 1s ease-out forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.25);
+    padding: 0.75rem 1.2rem;
+    border-radius: 8px;
+    display: inline-block;
+  }
+
+  .highlightBackground {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+    padding: 0.6em 1.2em;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  
+    /* Make sure it inherits opacity and transform for animation */
+    opacity: inherit;
+    transform: inherit;
+  }
+  
+  /* Fade slide up keyframes */
+@keyframes fadeSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade slide up animation */
+  .fadeSlideUp {
+    animation: fadeSlideUp 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    opacity: 0;
+  }
+  
+  /* Delay helper class */
+  .fadeDelay {
+    animation-delay: 0.5s;
+  }
+  
+  /* Delay helper class for later */
+  .fadeDelayLong {
+    animation-delay: 3s;
+  }
+  
+  /* Highlight background with inherited opacity & transform */
+  .highlightBackground {
+    background: rgba(0, 0, 0, 0); /* start transparent */
+    backdrop-filter: blur(6px);
+    padding: 0.6em 1.2em;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  
+    opacity: inherit;
+    transform: inherit;
+  
+    /* Animate background-color separately */
+    animation: backgroundFadeIn 1s ease forwards;
+    animation-delay: 1s; /* delay background color fade in */
+  }
+  
+  /* Background color fade in keyframes */
+  @keyframes backgroundFadeIn {
+    from {
+      background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+  
+  /* Urgency message */
+  .urgencyAnimated {
+    animation: pulseFadeIn 1.2s ease-out forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    color: #fff;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.25);
+    padding: 0.75rem 1.2rem;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  /* Pulse fade in keyframes */
+  @keyframes pulseFadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.03);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @media (max-width: 768px) {
+    .highlight {
+      white-space: normal; /* allow wrapping */
+      font-size: 3rem;     /* smaller font size */
+      padding: 0.1rem; /* smaller padding */
+    }
+  
+    .text {
+      white-space: normal; /* allow wrapping */
+      font-size: 1.4rem;  
+      padding: 0.1rem; /* smaller font size */
+    }
+  }
   

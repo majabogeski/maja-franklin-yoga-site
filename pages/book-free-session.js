@@ -1,30 +1,15 @@
 import Head from 'next/head'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import styles from './BookFreeSession.module.css'
 
 export default function BookFreeSession() {
   const calendlyRef = useRef(null)
+  const [daysLeft, setDaysLeft] = useState(null)
 
   useEffect(() => {
     const scriptSrc = 'https://assets.calendly.com/assets/external/widget.js'
 
-    if (!document.querySelector(`script[src="${scriptSrc}"]`)) {
-      const script = document.createElement('script')
-      script.src = scriptSrc
-      script.async = true
-      script.onload = () => {
-        if (window.Calendly) {
-          window.Calendly.initInlineWidget({
-            url: 'https://calendly.com/majafranklinyoga/30min',
-            parentElement: calendlyRef.current,
-            prefill: {},
-            utm: {}
-          })
-        }
-      }
-      document.head.appendChild(script)
-    } else {
-      // If script already loaded
+    const loadCalendly = () => {
       if (window.Calendly) {
         window.Calendly.initInlineWidget({
           url: 'https://calendly.com/majafranklinyoga/30min',
@@ -34,6 +19,20 @@ export default function BookFreeSession() {
         })
       }
     }
+
+    if (!document.querySelector(`script[src="${scriptSrc}"]`)) {
+      const script = document.createElement('script')
+      script.src = scriptSrc
+      script.async = true
+      script.onload = loadCalendly
+      document.head.appendChild(script)
+    } else {
+      loadCalendly()
+    }
+
+    const today = new Date()
+    const daysLeftThisWeek = 6 - today.getDay() + 1
+    setDaysLeft(daysLeftThisWeek)
   }, [])
 
   return (
@@ -46,14 +45,39 @@ export default function BookFreeSession() {
         />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.heading}>Book Your Free 45-Minute Session</h1>
-        <p className={styles.text}>
-          Let’s talk about what you need and how yoga, holistic coaching, or both can support you. I’d love to meet you!
-        </p>
+      {/* Video background */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className={styles.videoBackground}
+      >
+        <source src="/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-        {/* Calendly will render into this div */}
+      {/* Overlay for contrast */}
+      <div className={styles.videoOverlay} />
+
+      <main className={styles.main}>
+      <h1 className={`${styles.heading} ${styles.fadeSlideUp}`}>
+        <span className={styles.highlight}>Book Your Free 45-Minute Session</span>
+      </h1>
+
+      <p className={styles.text}>
+      <span className={`${styles.highlightBackground} ${styles.fadeSlideUp} ${styles.fadeDelay}`}>
+        I’m excited to meet you and support your journey—let’s get started!
+      </span>
+      </p>
+
         <div ref={calendlyRef} className={styles.calendlyWidget} />
+
+        {daysLeft !== null && (
+         <p className={styles.urgencyAnimated}>
+            ⏳ Hurry! Only <strong>{daysLeft} day{daysLeft > 1 ? 's' : ''}</strong> left this week to claim your free session.
+          </p>
+        )}
       </main>
     </>
   )

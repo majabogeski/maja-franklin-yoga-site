@@ -21,7 +21,7 @@ const ForYouIf = () => {
           <li>Crave space to breathe, reflect, and get clear on your life priorities — for yourself and your family</li>
           <li>Are ready to find a balance that feels just right — for you and the ones you love</li>
         </ul>
-        <Link href="https://innermovementcoaching.com/contact" className="button"target="_blank" rel="noopener noreferrer">
+        <Link href="/book-free-session" className="button"target="_blank" rel="noopener noreferrer">
           Book Free Session
         </Link>
       </div>

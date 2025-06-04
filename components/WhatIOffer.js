@@ -22,7 +22,7 @@ const WhatIOffer = () => {
           <li>Carve out space to <strong>rest, reflect, and reset</strong> — without guilt</li>
 
           </ul>
-          <Link href="https://innermovementcoaching.com/contact" className="button"target="_blank" rel="noopener noreferrer">
+          <Link href="/book-free-session" className="button"target="_blank" rel="noopener noreferrer">
             Book Free Session
           </Link>
         </div>

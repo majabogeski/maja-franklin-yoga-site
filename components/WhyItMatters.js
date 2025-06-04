@@ -19,7 +19,7 @@ const WhyItMatters = () => {
         Blending ancient yoga wisdom with coaching that nurtures mind, body, and spirit, I help you discover balance and cultivate calm and joy—physically, emotionally, and spiritually.
         </p>
         
-        <Link href="https://innermovementcoaching.com/contact" passHref target="_blank" rel="noopener noreferrer">
+        <Link href="/book-free-session" passHref target="_blank" rel="noopener noreferrer">
         <button className="cta">Book Free Session</button>
       </Link>
       </div>
