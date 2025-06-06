@@ -27,7 +27,8 @@ const Choices = () => {
             <p style={{ fontSize: "1.3rem", color: "#735240", marginBottom: "1rem" }}>
               ✨ Ready to experience this for yourself?
             </p>
-            <Link href="/book-free-session" className="button">
+           
+            <Link href="/book-free-session" className="button"target="_blank" rel="noopener noreferrer">
               Book Free Session
             </Link>
           </div>

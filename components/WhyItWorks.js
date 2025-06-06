@@ -43,18 +43,9 @@ export default function WhyItWorks() {
             ✨ Discover how this can work for you
           </p>
 
-          <Link href="/book-free-session" className="button">
-              Book Free Session
-          </Link>
-
-          {/* <Link
-            href="/book-free-session"
-            className="ctaLink"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-           Book your free session →
-          </Link> */}
+          <Link href="/book-free-session" className="button"target="_blank" rel="noopener noreferrer">
+          Book Free Session
+        </Link>
     </section>
   );
 }

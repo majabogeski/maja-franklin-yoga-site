@@ -14,6 +14,7 @@ export default function Hero() {
         alt="Maja Franklin by the water"
         width={1571}
         height={2158}
+        priority 
         className={styles.heroImage}
       />
 
@@ -40,11 +41,13 @@ export default function Hero() {
         <p className={styles.subtitle}>
           Using simple tools to reduce stress, restore your well-being, and enjoy motherhood—without burning out.
         </p>
-        <Link href="/book-free-session" legacyBehavior passHref>
-          <a target="_blank" rel="noopener noreferrer">
+        
+       
+
+        <Link href="/book-free-session"  passHref target="_blank" rel="noopener noreferrer" >
             <button className="cta">Book Free Session</button>
-          </a>
         </Link>
+      
       </div>
 
       <div className={styles.socialLinks}>
