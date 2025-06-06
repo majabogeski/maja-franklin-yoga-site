@@ -3,5 +3,29 @@
 
 .sectionLightBrown{
     background-color: #fffaf5 !important;
+    padding: 1rem 0 2rem;
  }
+
+
+  .ctaLink {
+    display: block;          
+    font-size: 1.6rem;      
+    text-align: center;      
+    margin-top: 1rem;        
+    color: #b58676;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
   
+  .ctaLink:hover {
+    color: #8a5e48;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .ctaLink {
+      font-size: 1.4rem !important;
+    }
+  }

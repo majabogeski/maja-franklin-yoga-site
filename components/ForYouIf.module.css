@@ -6,7 +6,8 @@
     color: #735240;
     box-sizing: border-box;
     max-width: 1200px;
-    margin: 0 auto 2rem;
+    margin: 0 auto;
+    padding: 2rem;
   }
   
   .image {
@@ -36,6 +37,11 @@
       width: 200px;
       height: 200px;
       margin: 2rem 0 auto 0;
+    }
+
+    .forYouIf {
+   
+      padding: 1rem 0;
     }
   
    

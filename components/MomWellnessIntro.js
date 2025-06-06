@@ -24,10 +24,11 @@ const MomWellnessIntro = () => {
         You’re not just looking for relief.
         You want real tools to support your physical, emotional, and spiritual well-being—so you can show up fully for yourself and your family.
       </p>
+       <p className="claim-message">
+            ✨ Find calm in the chaos — start with one breath.
+        </p>
 
-      <p className={`${styles.interMedium}`}>
-      Find calm in the chaos — start with one breath.
-      </p>
+    
  
         <Link href="/book-free-session" className="button"target="_blank" rel="noopener noreferrer">
           Book Free Session

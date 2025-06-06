@@ -5,6 +5,7 @@ import Link from 'next/link'
 const ForYouIf = () => {
   return (
     <section className={styles.forYouIf}>
+      
       <img
         src="/ThisIsForYou.jpg"
         alt="Calm mom reflecting"

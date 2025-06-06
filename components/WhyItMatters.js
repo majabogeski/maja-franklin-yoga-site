@@ -20,7 +20,7 @@ const WhyItMatters = () => {
         </p>
         
         <Link href="/book-free-session" passHref target="_blank" rel="noopener noreferrer">
-        <button className="cta">Book Free Session</button>
+        <button className="cta">Start Now</button>
       </Link>
       </div>
     </section>

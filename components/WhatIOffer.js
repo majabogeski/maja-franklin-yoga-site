@@ -22,8 +22,17 @@ const WhatIOffer = () => {
           <li>Carve out space to <strong>rest, reflect, and reset</strong> — without guilt</li>
 
           </ul>
-          <Link href="/book-free-session" className="button"target="_blank" rel="noopener noreferrer">
-            Book Free Session
+           <p className="claim-message">
+            ✨ Claim the calm, confidence, and clarity you deserve — today.
+          </p>
+
+          <Link
+            href="/book-free-session"
+            className="ctaLink"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Start here →
           </Link>
         </div>
       </div>

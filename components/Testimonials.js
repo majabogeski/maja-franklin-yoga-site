@@ -9,7 +9,7 @@ const testimonials = [
   // },
   {
     name: "Emily R.",
-    text: "Maja’s breathwork and coaching helped me slow down and reconnect. I now show up calmer and more present for my family and work."
+    text: "Maja’s private yoga sessions, combined with coaching, helped me reconnect with my body and release stored stress. Through movement and breathwork, I was able to slow down and tune in. I now show up more grounded and present—for both my family and my work."
 
   },
   {

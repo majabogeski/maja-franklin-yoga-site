@@ -91,7 +91,7 @@ html, body {
 
 .button{
   display: block; /* Make it a block element to center it */
-  margin: 1rem auto 1rem auto; 
+  margin: 2rem auto 3rem auto;
   width: fit-content; /* Keeps button width to its content */
   padding: 1rem 2rem;
   background-color: #b58676;
@@ -107,6 +107,35 @@ html, body {
 
 .button:hover {
   background-color: #9b5c28;
+}
+
+.ctaLink {
+  display: block;          
+  font-size: 1.4rem;      
+  text-align: center;      
+  margin-top: 1rem;        
+  color: #b58676;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.ctaLink:hover {
+  color: #8a5e48;
+  text-decoration: underline;
+}
+.sectionDiv p.claim-message {
+  font-size: 1.2rem;
+  color: #735240;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.claimMessage {
+  font-size: 1.2rem;
+  color: #735240;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .contentWrapper {
@@ -149,6 +178,17 @@ html, body {
   .sectionDiv p {
     font-size: 1.9rem;
   }
+  .sectionDiv p.claim-message {
+    font-size: 1.3rem;
+  }
+  .claimMessage {
+    font-size: 1.3rem;
+  }
+  .ctaLink {
+            
+    font-size: 1.6rem;      
+  
+  }
   
 }
 
@@ -182,6 +222,12 @@ html, body {
   .sectionDiv p {
     font-size: 1.6rem;
   }
+  .sectionDiv p.claim-message {
+    font-size: 1.3rem;
+  }
+  .claimMessage {
+    font-size: 1.3rem;
+  }
 }
 
 /* iPad air */
@@ -192,4 +238,12 @@ html, body {
   font-size: 1.1rem;
   padding: 1rem 2rem;
   }
+  .sectionDiv p.claim-message {
+    font-size: 1.3rem;
+  }
+  .claimMessage {
+    font-size: 1.3rem;
+  }
 }
+
+
