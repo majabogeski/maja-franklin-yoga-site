@@ -49,6 +49,7 @@ export default function Home() {
 
         {/* Viewport */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="trustpilot-one-time-domain-verification-id" content="ac349746-7048-4065-84da-92cf6fc20316"/>
 
         {/* Page Metadata */}
         <title>Maja Franklin | Yoga & Holistic Coaching for Moms in Bay Area</title>
