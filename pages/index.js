@@ -2,39 +2,17 @@ import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import Hero from '../components/Hero'
 
-const MomMessage = dynamic(() => import('../components/MomMessage'), {
-  loading: () => <p>Loading...</p>,
-})
-const MomWellnessIntro = dynamic(() => import('../components/MomWellnessIntro'), {
-  loading: () => <p>Loading...</p>,
-})
-const ForYouIf = dynamic(() => import('../components/ForYouIf'), {
-  loading: () => <p>Loading...</p>,
-})
-const Choices = dynamic(() => import('../components/Choices'), {
-  loading: () => <p>Loading...</p>,
-})
-const Testimonials = dynamic(() => import('../components/Testimonials'), {
-  loading: () => <p>Loading...</p>,
-})
-const WhatIOffer = dynamic(() => import('../components/WhatIOffer'), {
-  loading: () => <p>Loading...</p>,
-})
-const MyJourney = dynamic(() => import('../components/MyJourney'), {
-  loading: () => <p>Loading...</p>,
-})
-const WhyItMatters = dynamic(() => import('../components/WhyItMatters'), {
-  loading: () => <p>Loading...</p>,
-})
-const WhyItWorks = dynamic(() => import('../components/WhyItWorks'), {
-  loading: () => <p>Loading...</p>,
-})
-const StickyButton = dynamic(() => import('../components/StickyButton'), {
-  loading: () => <p>Loading...</p>,
-})
-const Footer = dynamic(() => import('../components/Footer'), {
-  loading: () => <p>Loading...</p>,
-})
+const MomMessage = dynamic(() => import('../components/MomMessage'), { loading: () => <p>Loading...</p> })
+const MomWellnessIntro = dynamic(() => import('../components/MomWellnessIntro'), { loading: () => <p>Loading...</p> })
+const ForYouIf = dynamic(() => import('../components/ForYouIf'), { loading: () => <p>Loading...</p> })
+const Choices = dynamic(() => import('../components/Choices'), { loading: () => <p>Loading...</p> })
+const Testimonials = dynamic(() => import('../components/Testimonials'), { loading: () => <p>Loading...</p> })
+const WhatIOffer = dynamic(() => import('../components/WhatIOffer'), { loading: () => <p>Loading...</p> })
+const MyJourney = dynamic(() => import('../components/MyJourney'), { loading: () => <p>Loading...</p> })
+const WhyItMatters = dynamic(() => import('../components/WhyItMatters'), { loading: () => <p>Loading...</p> })
+const WhyItWorks = dynamic(() => import('../components/WhyItWorks'), { loading: () => <p>Loading...</p> })
+const StickyButton = dynamic(() => import('../components/StickyButton'), { loading: () => <p>Loading...</p> })
+const Footer = dynamic(() => import('../components/Footer'), { loading: () => <p>Loading...</p> })
 
 export default function Home() {
   return (
@@ -49,28 +27,18 @@ export default function Home() {
 
         {/* Viewport */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
 
         {/* Page Metadata */}
         <title>Maja Franklin | Yoga & Holistic Coaching for Moms in Bay Area</title>
-        <meta
-          name="description"
-          content="Helping busy moms find calm, balance, and joy through breathwork, yoga, and mindful routines."
-        />
+        <meta name="description" content="Helping busy moms find calm, balance, and joy through breathwork, yoga, and mindful routines." />
         <meta name="google-site-verification" content="b86-vPVZit-M99xwIhR7xGVLYl9SceuiPVVgg6s52hM" />
-        <meta
-          name="keywords"
-          content="yoga for moms, private yoga, holistic coaching, breathwork, mindfulness, stress relief, mom burnout, nervous system reset, Maja Franklin, Maya Franklin, yoga for women, finding balance"
-        />
+        <meta name="keywords" content="yoga for moms, private yoga, holistic coaching, breathwork, mindfulness, stress relief, mom burnout, nervous system reset, Maja Franklin, Maya Franklin, yoga for women, finding balance" />
         <meta name="author" content="Maja Franklin" />
         <link rel="canonical" href="https://www.majafranklinyoga.com/" />
 
         {/* Open Graph */}
         <meta property="og:title" content="Maja Franklin | Yoga & Holistic Coaching for Moms" />
-        <meta
-          property="og:description"
-          content="Helping busy moms find calm, balance, and joy through breathwork, yoga, and mindful routines."
-        />
+        <meta property="og:description" content="Helping busy moms find calm, balance, and joy through breathwork, yoga, and mindful routines." />
         <meta property="og:url" content="https://www.majafranklinyoga.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.majafranklinyoga.com/majafranklinyogahero.jpg" />
@@ -79,27 +47,34 @@ export default function Home() {
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Maja Franklin | Yoga & Holistic Coaching for Moms" />
-        <meta
-          name="twitter:description"
-          content="Helping busy moms find calm, balance, and joy through yoga, breathwork, and mindful routines."
-        />
+        <meta name="twitter:description" content="Helping busy moms find calm, balance, and joy through yoga, breathwork, and mindful routines." />
         <meta name="twitter:image" content="https://www.majafranklinyoga.com/majafranklinyogahero.jpg" />
 
+        {/* Structured Data: Organization */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
+              "@id": "https://www.majafranklinyoga.com/#organization",
               "name": "Maja Franklin Yoga",
               "url": "https://www.majafranklinyoga.com",
-              "logo": "https://www.majafranklinyoga.com/logo.png"  
-            }),
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.majafranklinyoga.com/logo.png",
+                "width": 300,
+                "height": 300
+              },
+              "sameAs": [
+                "https://www.instagram.com/majafranklinyoga",
+                "https://www.youtube.com/@majafranklinyoga"
+              ]
+            })
           }}
         />
 
-
-        {/* Structured Data JSON-LD */}
+        {/* Structured Data: Person */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -109,12 +84,10 @@ export default function Home() {
               "name": "Maja Franklin",
               "url": "https://www.majafranklinyoga.com/",
               "sameAs": [
-                "https://www.facebook.com/yourprofile",
-                "https://www.instagram.com/yourprofile",
-              ],
-              "jobTitle": "Yoga & Holistic Coach",
-              "description": "Helping busy moms find calm, balance, and joy through breathwork, yoga, and mindful routines."
-            }),
+                "https://www.instagram.com/majafranklinyoga",
+                "https://www.youtube.com/@majafranklinyoga"
+              ]
+            })
           }}
         />
       </Head>
@@ -131,7 +104,7 @@ export default function Home() {
         <WhyItMatters />
         <WhyItWorks />
         <Footer />
-        <StickyButton/>
+        <StickyButton />
       </main>
     </>
   )
