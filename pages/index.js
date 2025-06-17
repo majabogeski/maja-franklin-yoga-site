@@ -51,6 +51,9 @@ export default function Home() {
         <meta name="twitter:image" content="https://www.majafranklinyoga.com/majafranklinyogahero.jpg" />
 
         {/* Structured Data: Organization */}
+
+
+        
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -90,6 +93,10 @@ export default function Home() {
             })
           }}
         />
+
+
+
+
       </Head>
 
       <main>

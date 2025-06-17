@@ -98,7 +98,7 @@ const Testimonials = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Person",
-            name: "Maja",
+            name: "Maja Franklin",
             knowsAbout: [
               "Private Yoga",
               "Life Coaching",
@@ -112,12 +112,18 @@ const Testimonials = () => {
             ],
             review: testimonials.map((t) => ({
               "@type": "Review",
-              reviewBody: t.text,
-              author: {
+              "reviewBody": t.text,
+              "author": {
                 "@type": "Person",
-                name: t.name
+                "name": t.name
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
               }
             }))
+            
           }),
         }}
       />
