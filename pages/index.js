@@ -57,7 +57,7 @@ export default function Home() {
           name="description"
           content="Helping busy moms find calm, balance, and joy through breathwork, yoga, and mindful routines."
         />
-         <meta name="google-site-verification" content="b86-vPVZit-M99xwIhR7xGVLYl9SceuiPVVgg6s52hM" />
+        <meta name="google-site-verification" content="b86-vPVZit-M99xwIhR7xGVLYl9SceuiPVVgg6s52hM" />
         <meta
           name="keywords"
           content="yoga for moms, private yoga, holistic coaching, breathwork, mindfulness, stress relief, mom burnout, nervous system reset, Maja Franklin, Maya Franklin, yoga for women, finding balance"
@@ -93,7 +93,7 @@ export default function Home() {
               "@type": "Organization",
               "name": "Maja Franklin Yoga",
               "url": "https://www.majafranklinyoga.com",
-              "logo": "https://www.majafranklinyoga.com/logo.png"  
+              "logo": "https://www.majafranklinyoga.com/web-app-manifest-192x192.png"  
             }),
           }}
         />
