@@ -86,6 +86,14 @@ const Testimonials = () => {
               "https://www.instagram.com/majafranklinyoga",
               "https://www.youtube.com/@majafranklinyoga"
             ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Shoreline CT",
+              "addressLocality": "Richmond",
+              "addressRegion": "CA",
+              "postalCode": "94804",
+              "addressCountry": "US"
+            },
             "knowsAbout": [
               "Private Yoga",
               "Life Coaching",
