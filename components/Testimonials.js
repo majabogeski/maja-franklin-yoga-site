@@ -93,44 +93,50 @@ const Testimonials = () => {
 
       {/* JSON-LD for SEO */}
       <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Person",
-      name: "Maja Franklin",
-      knowsAbout: [
-        "Private Yoga",
-        "Life Coaching",
-        "Mindfulness",
-        "Breathwork",
-        "Stress Management",
-        "Holistic Coaching",
-        "Motherhood Support",
-        "Wellness",
-        "Meditation"
-      ],
-      review: testimonials.map((t) => ({
-        "@type": "Review",
-        "reviewBody": t.text,
-        "author": {
-          "@type": "Person",
-          "name": t.name
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        }
-      })),
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: testimonials.length
-      }
-    }),
-  }}
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService", 
+          name: "Maja Franklin Yoga",
+          url: "https://www.majafranklinyoga.com/",
+          sameAs: [
+            "https://www.instagram.com/majafranklinyoga",
+            "https://www.youtube.com/@majafranklinyoga"
+          ],
+          knowsAbout: [
+            "Private Yoga",
+            "Life Coaching",
+            "Mindfulness",
+            "Breathwork",
+            "Stress Management",
+            "Holistic Coaching",
+            "Motherhood Support",
+            "Wellness",
+            "Meditation"
+          ],
+          review: testimonials.map((t) => ({
+            "@type": "Review",
+            "reviewBody": t.text,
+            "author": {
+              "@type": "Person",
+              "name": t.name
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            }
+          })),
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "5",
+            reviewCount: testimonials.length
+          }
+        }),
+      }}
 />
+
 
     </section>
   );
