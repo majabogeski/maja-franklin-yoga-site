@@ -93,7 +93,7 @@ export default function Home() {
               "@type": "Organization",
               "name": "Maja Franklin Yoga",
               "url": "https://www.majafranklinyoga.com",
-              "logo": "https://www.majafranklinyoga.com/web-app-manifest-192x192.png"  
+              "logo": "https://www.majafranklinyoga.com/logo.png"  
             }),
           }}
         />
