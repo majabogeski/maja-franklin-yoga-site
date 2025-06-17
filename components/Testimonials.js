@@ -3,10 +3,7 @@ import styles from "./Testimonials.module.css";
 import Link from "next/link";
 
 const testimonials = [
-  // {
-  //   name: "Emily R.",
-  //   text: "As a mom constantly juggling work, parenting, and never-ending to-do lists, I felt like I was running on fumes. Maja’s gentle yoga, breathwork, and coaching helped me slow down and reconnect with myself. The combination is a truly whole body–mind–soul experience. These simple but powerful tools gave me real ways to manage stress and stay grounded — even in the middle of chaos. I now show up calmer and more present, both at home and at work. Working with her has truly changed my life.",
-  // },
+
   {
     name: "Emily R.",
     text: "Maja’s private yoga sessions, combined with coaching, helped me reconnect with my body and release stored stress. Through movement and breathwork, I was able to slow down and tune in. I now show up more grounded and present—for both my family and my work."
@@ -17,18 +14,12 @@ const testimonials = [
     text: "The breathing exercises quiet my monkey mind instantly. I use them all the time to reset and find calm.",
   },
 
-  // {
-  //   name: "Marija G.",
-  //   text: "Before working with Maja, I felt constantly overwhelmed and reactive — I’d lose my patience with my kid over the smallest things. I fell in love with the breathing exercises; I had no idea how powerful and calming they could be. My favorite is the bee breath — it quiets my monkey mind instantly, and I use it all the time. Through Maja’s guidance, I’ve learned how to pause, reset, and respond with more calm.",
-  // },
+ 
   {
     name: "Natalie S.",
     text: "Maja guided me to focus on what matters, let go of stress, and feel more balanced and confident.",
   },
-  // {
-  //   name: "Natalie S.",
-  //   text: "Before working with Maja, I was overwhelmed trying to juggle a full-time job, my business, and parenting as a single mom. I felt constantly stressed and struggled to prioritize what really mattered. Maja guided me with meditation, breathwork, and gentle movement to help me reconnect with myself and truly focus on what’s important—letting go of things that aren’t and not obsessing over them. Her thoughtful questions helped me uncover my own answers instead of just giving advice. With her support, I learned how to make wiser choices and make my own decisions that feel right to me with confidence, manage my stress better, and focus on what truly counts in my life. Thanks to Maja, I feel more balanced, calm, and confident in handling everything on my plate. So thankful!",
-  // },
+
   {
     name: "Laxmi G.",
     text: "The experience was absolutely amazing—exactly what I was looking for! The class was both refreshing and rejuvenating, leaving me feeling more balanced and energized. I truly appreciate the guidance and atmosphere, and I will definitely continue attending.",
