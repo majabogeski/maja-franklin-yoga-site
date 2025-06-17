@@ -84,6 +84,20 @@ export default function Home() {
         />
         <meta name="twitter:image" content="https://www.majafranklinyoga.com/majafranklinyogahero.jpg" />
 
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Maja Franklin Yoga",
+              "url": "https://www.majafranklinyoga.com",
+              "logo": "https://www.majafranklinyoga.com/logo.png"  
+            }),
+          }}
+        />
+
+
         {/* Structured Data JSON-LD */}
         <script
           type="application/ld+json"
@@ -96,7 +110,6 @@ export default function Home() {
               "sameAs": [
                 "https://www.facebook.com/yourprofile",
                 "https://www.instagram.com/yourprofile",
-                // Add other social links here
               ],
               "jobTitle": "Yoga & Holistic Coach",
               "description": "Helping busy moms find calm, balance, and joy through breathwork, yoga, and mindful routines."
