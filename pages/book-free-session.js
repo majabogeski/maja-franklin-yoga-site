@@ -78,6 +78,10 @@ export default function BookFreeSession() {
             ⏳ Hurry! Only <strong>{daysLeft} day{daysLeft > 1 ? 's' : ''}</strong> left this week to claim your free session.
           </p>
         )}
+        <p className={`${styles.contactInfo} ${styles.fadeSlideUp} ${styles.fadeDelayLonger}`}>
+          Prefer to talk? Text or call me at <a href="tel:5104266579">(510) 426-6579</a>
+        </p>
+
       </main>
     </>
   )

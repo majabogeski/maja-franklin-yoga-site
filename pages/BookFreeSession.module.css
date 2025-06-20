@@ -200,6 +200,27 @@
       transform: scale(1);
     }
   }
+  .contactInfo {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .contactInfo a {
+    color: #ff8d6d;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .contactInfo a:hover {
+    text-decoration: underline;
+  }
+  .fadeDelayLonger {
+    animation-delay: 4.5s;
+  }
+  
   @media (max-width: 768px) {
     .highlight {
       white-space: normal; /* allow wrapping */
@@ -213,4 +234,6 @@
       padding: 0.1rem; /* smaller font size */
     }
   }
+
+
   

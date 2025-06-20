@@ -42,12 +42,12 @@ const Footer = () => {
         </div>
 
         <form className={styles.signupForm} onSubmit={handleSubmit}>
-         <p
-          className={styles.signupMessage}
-          style={{ textAlign: "center", fontWeight: 500 }}
-        >
-          Sign up for calm and balance — simple tools for busy moms.
-        </p>
+          <p
+            className={styles.signupMessage}
+            style={{ textAlign: "center", fontWeight: 500 }}
+          >
+            Sign up for calm and balance — simple tools for busy moms.
+          </p>
           <input
             className={styles.signupInput}
             type="email"
@@ -63,50 +63,47 @@ const Footer = () => {
           </button>
         </form>
 
-        {status === "success" && (
-          <p style={{ textAlign: "center", color: "#fff", marginTop: "0.5rem" }}>
-            ✅ Thanks! You’re signed up.
-          </p>
-        )}
-        {status === "error" && (
-          <p style={{ textAlign: "center", color: "red", marginTop: "0.5rem" }}>
-            ❌ Oops! Something went wrong.
-          </p>
-        )}
+        {/* Wrap social icons + phone number together */}
+        <div className={styles.socialAndPhone}>
+          <div className={styles.socialLinks}>
+            <a
+              href="https://www.youtube.com/@majafranklinyoga"
+              target="_blank"
+              aria-label="YouTube"
+              rel="noreferrer"
+              className={styles.socialIcon}
+            >
+              <FaYoutube />
+            </a>
+            <a
+              href="https://www.instagram.com/majafranklinyoga"
+              target="_blank"
+              aria-label="Instagram"
+              rel="noreferrer"
+              className={styles.socialIcon}
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="mailto:majafranklinyoga@gmail.com"
+              aria-label="Email"
+              className={styles.socialIcon}
+            >
+              <MdEmail />
+            </a>
+          </div>
 
-        <div className={styles.socialLinks}>
-          <a
-            href="https://www.youtube.com/@majafranklinyoga"
-            target="_blank"
-            aria-label="YouTube"
-            rel="noreferrer"
-            className={styles.socialIcon}
-          >
-            <FaYoutube />
-          </a>
-          <a
-            href="https://www.instagram.com/majafranklinyoga"
-            target="_blank"
-            aria-label="Instagram"
-            rel="noreferrer"
-            className={styles.socialIcon}
-          >
-            <FaInstagram />
-          </a>
-          <a
-            href="mailto:majafranklinyoga@gmail.com"
-            aria-label="Email"
-            className={styles.socialIcon}
-          >
-            <MdEmail />
-          </a>
+          <div className={styles.phoneNumber}>
+            <a href="tel:5104266579" aria-label="Call Maja Franklin">
+              (510) 426-6579
+            </a>
+          </div>
         </div>
       </div>
 
-      <div className={styles.legalText}>
-        Maja Franklin — Yoga Teacher + Holistic Coach | All rights reserved ©
-        2015–2025
-      </div>
+      <p className={styles.legalText}>
+        © {new Date().getFullYear()} Maja Franklin Yoga. All rights reserved.
+      </p>
     </footer>
   );
 };

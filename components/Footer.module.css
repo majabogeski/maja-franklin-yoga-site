@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-/* 🆕 Top section of the footer (logo, signup, social) */
+/* 🆕 Top section of the footer (logo, signup, social + phone) */
 .footerTop {
   display: flex;
   flex-direction: column;
@@ -32,13 +32,20 @@
   margin: -6rem 0 -6rem;
 }
 
+/* Social icons container */
+.socialAndPhone {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center horizontally on mobile */
+  gap: 8px;
+}
+
 /* Social icons */
 .socialLinks {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin-bottom: 20px;
 }
 
 .socialIcon {
@@ -58,6 +65,25 @@
 .socialIcon:hover {
   background-color: #735240;
   color: white;
+}
+
+/* Phone number styling */
+.phoneNumber {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.phoneNumber a {
+  color: #fff2dc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.phoneNumber a:hover {
+  text-decoration: underline;
 }
 
 /* Signup form */
@@ -144,6 +170,10 @@
     flex-wrap: wrap;
     gap: 12px;
   }
+
+  .socialAndPhone {
+    align-items: center; /* center on mobile */
+  }
 }
 
 /* Desktop styles */
@@ -153,15 +183,15 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px; /* ✅ limits width on desktop */
-    margin: 0 auto;     /* ✅ centers the footerTop */
+    max-width: 1200px; /* limits width on desktop */
+    margin: 0 auto;     /* centers the footerTop */
     padding: 0 2rem;
     gap: 1rem;
   }
 
   .footerLogos,
   .signupForm,
-  .socialLinks {
+  .socialAndPhone {
     flex: 1;
   }
 
@@ -173,9 +203,9 @@
     justify-content: center;
   }
 
-  .socialLinks {
+  .socialAndPhone {
     justify-content: flex-end;
-    margin-bottom: 0;
+    align-items: flex-end; /* right align on desktop */
   }
 
   .legalText {
