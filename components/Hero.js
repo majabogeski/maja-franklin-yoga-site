@@ -47,6 +47,12 @@ export default function Hero() {
         <Link href="/book-free-session"  passHref target="_blank" rel="noopener noreferrer" >
             <button className="cta">Book Free Session</button>
         </Link>
+        {/* <p className={styles.phoneNumber}>
+        Prefer to talk?{" "}
+          <a href="tel:5104266579" style={{ color: 'inherit', textDecoration: 'none' }}>
+            510-426-6579
+          </a>
+        </p> */}
       
       </div>
 
@@ -60,7 +66,14 @@ export default function Hero() {
         <a href="mailto:majafranklinyoga@gmail.com" aria-label="Email" className={styles.socialIcon}>
           <MdEmail />
         </a>
+        <div className={styles.phoneNumber}>
+            <a href="tel:5104266579" aria-label="Call Maja Franklin">
+              510-426-6579
+            </a>
+        </div>
+        
       </div>
+      
     </section>
   )
 }

@@ -55,10 +55,6 @@
   display: block;
 }
 
-
-
-
-
 .title {
   font-size: 2.3rem;
   line-height: 1.4;
@@ -90,6 +86,24 @@
 .buttonHero{
   background-color: white;
   color: #b58676;
+}
+/* Phone number styling */
+.phoneNumber {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.phoneNumber a {
+  color: #fff2dc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.phoneNumber a:hover {
+  text-decoration: underline;
 }
 /* Tablet & Desktop Overrides */
 @media (min-width: 768px) {
