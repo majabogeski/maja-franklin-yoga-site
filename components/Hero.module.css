@@ -105,6 +105,27 @@
 .phoneNumber a:hover {
   text-decoration: underline;
 }
+
+/* Phone number under CTA only */
+.phoneUnderCta {
+  margin-top: -0.8rem;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #fff5f2;
+  font-weight: 600;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.phoneUnderCta a {
+  color: #fff2dc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.phoneUnderCta a:hover {
+  text-decoration: underline;
+}
 /* Tablet & Desktop Overrides */
 @media (min-width: 768px) {
   .logo {
@@ -154,9 +175,6 @@
     display: block;
   } 
 
-
-
-
   .title {
     font-size: 2rem;
     padding: 0;
@@ -195,6 +213,12 @@
     background-color: #735240;
     color: white;
   }
+  
+    .phoneUnderCta {
+      text-align: left;
+      padding: 0rem;
+    }
+  
 }
 @media (min-width: 1024px) {
   .logo {
