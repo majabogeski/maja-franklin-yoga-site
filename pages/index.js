@@ -69,6 +69,7 @@ export default function Home() {
                 "width": 300,
                 "height": 300
               },
+              "image": "https://www.majafranklinyoga.com/logo.png",
               "sameAs": [
                 "https://www.instagram.com/majafranklinyoga",
                 "https://www.youtube.com/@majafranklinyoga"
