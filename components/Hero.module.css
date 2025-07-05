@@ -108,6 +108,7 @@
 /* Phone number under CTA only */
 .phoneUnderCta {
   margin-top: -0.8rem;
+  margin-left: 0px;
   font-size: 1.1rem;
   text-align: center;
   color: #fff5f2;
@@ -213,11 +214,11 @@
     color: white;
   }
   
-    .phoneUnderCta {
-      text-align: left;
-      padding: 0rem;
-      margin-left: 2px;
-    }
+  .phoneUnderCta {
+    text-align: left;
+    padding: 0rem;
+    margin-left: 2px;
+  }
   
 }
 @media (min-width: 1024px) {
@@ -262,6 +263,11 @@
     object-position: top center;
     display: block;
   } 
+  .phoneUnderCta {
+    text-align: left;
+    padding: 0rem;
+    margin-left: 2px;
+  }
     
 }
 
