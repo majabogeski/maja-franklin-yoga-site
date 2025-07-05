@@ -12,7 +12,7 @@ export default function BookFreeSession() {
     const loadCalendly = () => {
       if (window.Calendly) {
         window.Calendly.initInlineWidget({
-          url: 'https://calendly.com/majafranklinyoga/30min',
+          url: 'https://calendly.com/majafranklinyoga/intro-call',
           parentElement: calendlyRef.current,
           prefill: {},
           utm: {}
