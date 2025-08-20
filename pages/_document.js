@@ -4,7 +4,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
-    <Html>
+    <Html lang="en-US">
       <Head>
         <link
           href="https://assets.calendly.com/assets/external/widget.css"

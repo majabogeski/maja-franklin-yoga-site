@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import Hero from '../components/Hero'
+import GoogleReviews from '../components/GoogleReviews';
 
 const MomMessage = dynamic(() => import('../components/MomMessage'), { loading: () => <p>Loading...</p> })
 const MomWellnessIntro = dynamic(() => import('../components/MomWellnessIntro'), { loading: () => <p>Loading...</p> })
@@ -102,6 +103,7 @@ export default function Home() {
 
       <main>
         <Hero />
+        <GoogleReviews />  
         <MomMessage />
         <MomWellnessIntro />
         <ForYouIf />
@@ -114,6 +116,7 @@ export default function Home() {
         <Footer />
         <StickyButton />
       </main>
+      
     </>
   )
 }
