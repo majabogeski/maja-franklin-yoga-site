@@ -91,10 +91,10 @@ export default function GoogleReviews({ reviews }) {
                 <p className={styles.text}>
                   {isExpanded
                     ? review.text
-                    : review.text.length > 150
-                    ? `${review.text.slice(0, 150)}…`
+                    : review.text.length > 250
+                    ? `${review.text.slice(0, 250)}…`
                     : review.text}
-                  {review.text.length > 150 && (
+                  {review.text.length > 250 && (
                     <span
                       className={styles.readMore}
                       onClick={() =>
