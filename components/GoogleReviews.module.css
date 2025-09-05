@@ -1,0 +1,191 @@
+.reviewsSection {
+  padding: 4rem 2rem;
+  background-color: #f9f6f3; /* soft warm background */
+  text-align: center;
+}
+
+/* Header */
+.reviewsHeader {
+  display: flex;
+  align-items: center; /* ensures both logo + text center vertically */
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.googleLogo {
+  height: 36px; /* slightly smaller than before */
+  margin-right: 0.75rem;
+}
+
+.title {
+  font-size: 1.8rem;  /* a bit smaller, matches the logo */
+  line-height: 1;     /* keeps text snug with logo */
+  font-weight: bold;
+  color: #735240;
+  margin: 0;
+}
+
+/* Card */
+.reviewCard {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+}
+
+.reviewCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Reviewer */
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.avatarWrapper {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.googleBadge {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  background: #fff;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+}
+
+.googleBadgeImg {
+  width: 12px;
+  height: 12px;
+}
+
+.reviewerInfo {
+  margin-left: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.author {
+  font-weight: 600;
+  color: #735240;
+  display: flex;
+  align-items: center;
+}
+
+.verified {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.35rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #197BFF;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.time {
+  font-size: 0.75rem;
+  color: #777;
+  margin-top: 2px;
+}
+
+/* Stars */
+.rating {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.star {
+  margin-right: 3px;
+  font-size: 18px; /* larger stars */
+  font-weight: 600;
+  color: #ccc;
+}
+
+.filled {
+  color: #f7b500;
+}
+
+/* Text */
+.text {
+  font-size: 0.9rem;
+  color: #4b3a31;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.readMore {
+  color: #197BFF;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+/* Empty state */
+.reviewsEmpty {
+  text-align: center;
+  color: #999;
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+/* Swiper slides */
+.swiper-slide {
+  flex-shrink: 0;
+  width: 320px;
+}
+
+/* Swiper navigation arrows (scoped globally inside this section) */
+.reviewsSection :global(.swiper-button-next),
+.reviewsSection :global(.swiper-button-prev) {
+  background-color: #735240;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: background-color 0.2s ease;
+}
+
+.reviewsSection :global(.swiper-button-next::after),
+.reviewsSection :global(.swiper-button-prev::after) {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.reviewsSection :global(.swiper-button-next:hover),
+.reviewsSection :global(.swiper-button-prev:hover) {
+  background-color: #a37b6b;
+}

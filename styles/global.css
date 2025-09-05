@@ -1,5 +1,9 @@
 
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Base Reset + Global Styles */
 html, body {
   margin: 0;
@@ -136,6 +140,14 @@ html, body {
   color: #735240;
   margin-bottom: 1rem;
   text-align: center;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 @media (min-width: 768px) {
   .contentWrapper {

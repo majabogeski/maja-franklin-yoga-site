@@ -15,7 +15,7 @@ const WhyItWorks = dynamic(() => import('../components/WhyItWorks'), { loading: 
 const StickyButton = dynamic(() => import('../components/StickyButton'), { loading: () => <p>Loading...</p> })
 const Footer = dynamic(() => import('../components/Footer'), { loading: () => <p>Loading...</p> })
 
-export default function Home() {
+export default function Home({ reviews }) {
   return (
     <>
       <Head>
@@ -96,14 +96,11 @@ export default function Home() {
           }}
         />
 
-
-
-
       </Head>
 
       <main>
         <Hero />
-        <GoogleReviews />  
+        <GoogleReviews reviews={reviews} />  
         <MomMessage />
         <MomWellnessIntro />
         <ForYouIf />
@@ -119,4 +116,23 @@ export default function Home() {
       
     </>
   )
+
+}
+export async function getStaticProps() {
+  try {
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+    const res = await fetch(`${baseUrl}/api/google-reviews`);
+    const data = await res.json();
+
+    return {
+      props: { reviews: data.reviews || [] },
+      revalidate: 1209600, // 2 weeks
+    };
+  } catch (error) {
+    console.error("Error fetching reviews:", error);
+    return {
+      props: { reviews: [] },
+      revalidate: 1209600,
+    };
+  }
 }
