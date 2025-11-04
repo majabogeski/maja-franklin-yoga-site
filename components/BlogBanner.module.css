@@ -1,0 +1,32 @@
+.banner {
+    background: #ff8d6d;
+    padding: 3rem 2rem;
+    text-align: center;
+    /* margin: 3rem 0; */
+    /* border-radius: 16px; */
+    color: #fff;
+  }
+  
+  
+  .text {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+  }
+  
+  .button {
+    background: #fff;
+    color: #735240;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+  
+  .button:hover {
+    background: #f9f6f3;
+    color: #a37b6b;
+  }
+  
